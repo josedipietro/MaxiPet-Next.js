@@ -17,13 +17,14 @@ class MyDocument extends Document {
     return (
       <Html lang="es">
         <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap"
-            rel="preload"
-            as="style"
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="anonymous"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish&family=Work+Sans&display=swap"
             rel="stylesheet"
           />
         </Head>

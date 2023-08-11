@@ -1,9 +1,6 @@
 import { IconsProps } from './types';
 
-export const dogPawAccent = '#B5B0AD ';
-export const dogPawLight = '';
-
-export const PawIcon = ({ size = 18, color = '#DAD6D3' }: IconsProps) => {
+export const PawLightIcon = ({ size = 18, color = '#DAD6D3' }: IconsProps) => {
   return (
     <svg
       width={size}
