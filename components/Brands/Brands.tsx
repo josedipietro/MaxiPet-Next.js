@@ -11,15 +11,15 @@ export const Brands = () => {
         title="Trabajamos con las mejores marcas"
       ></SectionHeader>
 
-      <div className="flex w-full mt-8 ">
-        <p className="w-2/5 font-body md:pr-16">
+      <div className="flex flex-col md:flex-row w-full mt-8 ">
+        <p className="w-full md:w-2/5 font-body lg:pr-16 mb-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit ut
           viverra fames sed.
         </p>
 
-        <div className="w-3/5 flex justify-between">
+        <div className="w-full md:w-3/5 flex justify-between flex-wrap">
           {brands.map((brand) => (
-            <figure key={brand.name} className="">
+            <figure key={brand.name} className="min-w-[140px] mb-4">
               <Image
                 width={127}
                 height={80}

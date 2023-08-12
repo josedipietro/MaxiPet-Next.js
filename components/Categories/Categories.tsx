@@ -11,7 +11,7 @@ export const Categories = () => {
         title="Una gran variedad de categorías"
       ></SectionHeader>
 
-      <div className="flex justify-between flex-wrap">
+      <div className="flex flex-wrap">
         {categories.map((categorie) => (
           <CategorieCard
             key={categorie}

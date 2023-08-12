@@ -8,7 +8,7 @@ export interface Service {
 
 export const ServiceCard = ({ service }: { service: Service }) => {
   return (
-    <article className="w-1/3 font-body pr-4 mt-8 text-font-black">
+    <article className="w-full md:w-1/2 lg:w-1/3 font-body pr-4 mt-8 text-font-black">
       <figure>
         <Image
           width={80}

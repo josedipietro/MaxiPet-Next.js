@@ -36,7 +36,7 @@ export const Carousel = ({ images, imageDuration = 5000 }: CarouselProps) => {
   };
 
   return (
-    <div className="relative w-full h-[580px]">
+    <div className="hidden md:block relative w-full h-[580px]">
       <Image
         className="object-cover"
         src={currentImage.src}

@@ -9,12 +9,13 @@ export const Copyright = () => {
         <DogHouseIcon></DogHouseIcon>
         <TreeIcon></TreeIcon>
       </div>
-      <div className="w-full py-1 bg-primary-300 flex justify-center items-center text-font-white">
+      <div className="w-full py-1 px-4 bg-primary-300 flex flex-col md:flex-row justify-center items-center text-font-white">
         <p className="text-sm mx-1">
           Copyrigth &copy; 2021 Maxi Pet. Todos los derechos reservados.
-          Desarrollado por Avila Tek
         </p>
-        <AvilaTekIcon></AvilaTekIcon>
+        <p className="flex text-sm mx-1 items-center">
+          Desarrollado por Avila Tek <AvilaTekIcon></AvilaTekIcon>
+        </p>
       </div>
     </>
   );

@@ -6,17 +6,15 @@ import { ShoppingCart } from '../ShoppingCart/ShoppingCart';
 
 import logo from '../../public/maxipet-logo.png';
 import { Nav } from '../Nav/Nav';
+import { SearchInput } from './SearchInput';
 
 export const HeaderActions = () => {
   return (
     <section className="pt-4 bg-background-100">
-      <div className="w-full flex justify-around items-center">
-        <Image className="w-48" src={logo} alt="MaxiPet Logo"></Image>
-        <input
-          placeholder="Buscador"
-          className="font-header placeholder:text-secondary-300 border-secondary-200 rounded-lg w-3/12 py-0 h-12 focus:border-primary-300 focus:shadow-md focus:ring-primary-300"
-          type="search"
-        />
+      <div className="w-full flex flex-col md:flex-row justify-around items-center">
+        <Image className="w-64 md:w-48" src={logo} alt="MaxiPet Logo"></Image>
+
+        <SearchInput />
         <div className="flex align-center">
           <div className="mx-2 transition-all hover:scale-105">
             <LocationIcon size={24} color="#333333"></LocationIcon>
