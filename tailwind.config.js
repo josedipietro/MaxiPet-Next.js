@@ -81,6 +81,9 @@ module.exports = {
         },
       },
     },
+    gridTemplateColumns: {
+      autofill: 'repeat(auto-fill, minmax(15rem, 15rem))',
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),

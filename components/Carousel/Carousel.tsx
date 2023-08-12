@@ -36,9 +36,9 @@ export const Carousel = ({ images, imageDuration = 5000 }: CarouselProps) => {
   };
 
   return (
-    <div className="relative w-screen max-h-[620px] h-[580px]">
+    <div className="relative w-full h-[580px]">
       <Image
-        className="w-full object-cover"
+        className="object-cover"
         src={currentImage.src}
         alt={currentImage.name}
         fill
