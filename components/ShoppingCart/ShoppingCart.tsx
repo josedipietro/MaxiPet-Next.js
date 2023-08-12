@@ -21,7 +21,11 @@ export const ShoppingCart = () => {
 
   return (
     <div ref={ref} className="relative">
-      <button onClick={handleClick} className="border-0 background-transparent">
+      <button
+        id="ShoppingCartButton"
+        onClick={handleClick}
+        className="border-0 background-transparent"
+      >
         <ShoppingCartIcon size={24}></ShoppingCartIcon>
       </button>
 

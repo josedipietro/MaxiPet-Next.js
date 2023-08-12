@@ -19,8 +19,15 @@ const useShoppingCart = (): ShoppingCartState => {
   return context;
 };
 
-export const ShoppingCartProvider = (props: PropsWithChildren) => {
-  const [products, setProducts] = useState<Product[]>([]);
+type ShoppingCartProviderProps = {
+  initProducts?: Product[];
+} & PropsWithChildren;
+
+export const ShoppingCartProvider = ({
+  children,
+  initProducts = [],
+}: ShoppingCartProviderProps) => {
+  const [products, setProducts] = useState<Product[]>(initProducts);
 
   const addProduct = (product: Product) => {
     if (products.includes(product)) return;
@@ -38,7 +45,7 @@ export const ShoppingCartProvider = (props: PropsWithChildren) => {
     <ShoppingCartContext.Provider
       value={{ products, addProduct, removeProduct }}
     >
-      {props.children}
+      {children}
     </ShoppingCartContext.Provider>
   );
 };
