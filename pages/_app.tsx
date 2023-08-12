@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Plantilla Next.js | Avila Tek</title>
+        <title>Maxi Pet 🐾</title>
       </Head>
       <ShoppingCartProvider>
         <Component {...pageProps} />
