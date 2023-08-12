@@ -19,7 +19,7 @@ export const ServiceCard = ({ service }: { service: Service }) => {
       </figure>
       <figcaption className="w-full">
         <h4 className="font-bold front-header text-lg">{service.name}</h4>
-        <p className="">{service.description}</p>
+        <p className="text-justify md:pr-8">{service.description}</p>
       </figcaption>
     </article>
   );

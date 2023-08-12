@@ -11,8 +11,8 @@ export const Brands = () => {
         title="Trabajamos con las mejores marcas"
       ></SectionHeader>
 
-      <div className="flex w-full mt-4">
-        <p className="w-2/5">
+      <div className="flex w-full mt-8 ">
+        <p className="w-2/5 font-body md:pr-16">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit ut
           viverra fames sed.
         </p>

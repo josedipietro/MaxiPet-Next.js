@@ -13,9 +13,7 @@ export const FeaturedProducts = () => {
       ></SectionHeader>
       <div className="flex">
         <CatImageAside />
-        <div className="w-full pl-6">
-          <ProductList products={products} />
-        </div>
+        <ProductList products={products} />
       </div>
     </HomeSectionLayout>
   );

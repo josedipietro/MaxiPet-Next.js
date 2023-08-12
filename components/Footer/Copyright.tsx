@@ -10,7 +10,7 @@ export const Copyright = () => {
         <TreeIcon></TreeIcon>
       </div>
       <div className="w-full py-1 bg-primary-300 flex justify-center items-center text-font-white">
-        <p className="mx-1">
+        <p className="text-sm mx-1">
           Copyrigth &copy; 2021 Maxi Pet. Todos los derechos reservados.
           Desarrollado por Avila Tek
         </p>
