@@ -17,7 +17,7 @@ export const Nav = () => {
 
 const NavLink = ({ text, href }) => {
   return (
-    <li>
+    <li className="transition-all hover:scale-105">
       <Link href={href}>
         <p>{text}</p>
       </Link>

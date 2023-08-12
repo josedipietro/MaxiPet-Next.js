@@ -47,17 +47,14 @@ export const Carousel = ({ images, imageDuration = 5000 }: CarouselProps) => {
       <ul className="w-1/3 absolute bottom-6 left-1/2 transform -translate-x-1/2 list-none p-0 grid grid-flow-col gap-4 grid-auto-columns">
         {images.map((image) => (
           <li className="w-full" key={image.name}>
-            {image.name === currentImage.name ? (
-              <button
-                onClick={() => handleClick(image)}
-                className="w-full border-0 p-0 rounded-lg bg-primary-300 h-2 mx-4"
-              ></button>
-            ) : (
-              <button
-                onClick={() => handleClick(image)}
-                className="w-full border-0 p-0 rounded-lg bg-secondary-100 h-2 mx-4"
-              ></button>
-            )}
+            <button
+              onClick={() => handleClick(image)}
+              style={{
+                backgroundColor:
+                  image.name === currentImage.name ? '#E2081E' : '#DAD6D3',
+              }}
+              className="w-full border-0 p-0 rounded-lg bg-primary-300 h-2 mx-4 transition-allduration-700 hover:scale-105"
+            ></button>
           </li>
         ))}
       </ul>

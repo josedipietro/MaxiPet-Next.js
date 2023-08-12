@@ -19,11 +19,10 @@ export const Brands = () => {
 
         <div className="w-3/5 flex justify-between">
           {brands.map((brand) => (
-            <figure className="">
+            <figure key={brand.name} className="">
               <Image
                 width={127}
                 height={80}
-                key={brand.name}
                 src={brand.image}
                 alt={brand.name}
               ></Image>

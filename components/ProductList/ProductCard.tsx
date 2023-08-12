@@ -27,7 +27,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
   };
 
   return (
-    <article className="font-header flex max-h-[334px] flex-col justify-center items-center text-left">
+    <article className="font-header flex max-h-[334px] flex-col justify-center items-center text-left hover:scale-105 transition-all">
       <figure className="mb-2">
         <Image
           className="object-cover"

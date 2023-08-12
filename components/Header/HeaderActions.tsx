@@ -18,16 +18,16 @@ export const HeaderActions = () => {
           type="search"
         />
         <div className="flex align-center">
-          <div className="mx-2">
+          <div className="mx-2 transition-all hover:scale-105">
             <LocationIcon size={24} color="#333333"></LocationIcon>
           </div>
-          <div className="mx-2">
+          <div className="mx-2 transition-all hover:scale-105">
             <PetHouseIcon size={24}></PetHouseIcon>
           </div>
-          <div className="mx-2">
+          <div className="mx-2 transition-all hover:scale-105">
             <UserIcon size={24}></UserIcon>
           </div>
-          <div className="mx-2">
+          <div className="mx-2 transition-all hover:scale-105">
             <ShoppingCart></ShoppingCart>
           </div>
         </div>

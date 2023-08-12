@@ -8,12 +8,14 @@ export const LocationsSelect = () => {
         <LocationIcon></LocationIcon>
       </div>
       <select
-        className="bg-transparent border-0 py-0 font-header text-font-white focus:border-0 selected:border-0"
+        className="bg-transparent border-0 py-0 font-header text-font-white focus:border-0 selected:border-0 focus:shadow-none focus:ring-transparent"
         name="location"
         id="locations-id"
       >
         {locations.map((location) => (
-          <option value={location}>{location}</option>
+          <option key={location} value={location}>
+            {location}
+          </option>
         ))}
       </select>
     </div>

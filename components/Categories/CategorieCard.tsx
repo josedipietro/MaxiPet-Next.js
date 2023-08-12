@@ -12,7 +12,7 @@ export const CategorieCard = ({
   categorieImage,
 }: CategorieCardProps) => {
   return (
-    <figure className="flex flex-col justify-center items-center p-4">
+    <figure className="flex flex-col justify-center items-center p-4 transition-all hover:scale-105">
       <Image
         width={160}
         height={149}

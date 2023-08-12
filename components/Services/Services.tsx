@@ -18,7 +18,7 @@ export const Services = () => {
 
       <div className="flex flex-wrap w-full">
         {services.map((service) => (
-          <ServiceCard service={service} />
+          <ServiceCard key={service.name} service={service} />
         ))}
       </div>
     </HomeSectionLayout>
